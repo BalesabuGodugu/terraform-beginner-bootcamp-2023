@@ -99,3 +99,11 @@ https://en.wikipedia.org/wiki/Chmod
 We need to be careful when using the Init because it will not rerun if we restart an existing workspace.
 
 https://www.gitpod.io/docs/configure/workspaces/tasks
+
+### working Env Vars
+
+### env command 
+
+we can list all environment variables using `env` command 
+
+we can filter specific env vars using grep e. `env | grep AWS_`
