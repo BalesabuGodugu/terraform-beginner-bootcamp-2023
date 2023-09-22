@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#!/usr/bin/env bash
 
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
 
