@@ -197,12 +197,12 @@ Terraform sources their providers and modules from the Terraform registry which 
 we can see list of all the terraform commands by typing `terraform`
 
 
-#### Terraform Init
+##### Terraform Init
 
 to start new terraform project we wil run `terraform init` to download the binaries for the terraform providers that we will use in the project.
 
 
-#### Terraform plan
+##### Terraform plan
 
 `terraform plan`
 
@@ -210,7 +210,7 @@ this will generate out a changeset, about state of our infrastructure and what w
 
 we can output this change ie.`terraform plan` to be pass to an apply, but often you can just ignore.
 
-### Terraform apply 
+#### Terraform apply 
 
 `terraform apply`
 
@@ -218,7 +218,12 @@ this will run  a plan and pass the changeset to be executed by terraform.Apply s
 
 if we want to automatically approve an apply we can provide the auto approve flat eg. `terraform apply --auto-approve`
 
-### Terraform Lock files
+#### Terraform destroy
+
+`terraform destroy ` will help to destroy the resource in aws
+
+
+#### Terraform Lock files
 
 `.terraform.lock.hcl` contains the locked versionfor the providers or modules that should be used  with this project.
 
