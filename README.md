@@ -179,3 +179,61 @@ you can set env vars in teh `gitpod.yml` but this can only contain non-sensitive
  
  
  ```
+
+
+ ## Terraform Basics
+
+ ### Terraform Registry 
+
+Terraform sources their providers and modules from the Terraform registry which located at [registry.terraform.io](https://registry.terraform.io/)
+
+-** Providers ** is an interface to APIs that will allow to create resources in terraform.
+-** Modules **  are a way to make large amount of terraform code modular, portable and sharable
+
+[Randorm Terraform provider](https://registry.terraform.io/providers/hashicorp/random/latest)
+
+### Terraform console
+
+we can see list of all the terraform commands by typing `terraform`
+
+
+#### Terraform Init
+
+to start new terraform project we wil run `terraform init` to download the binaries for the terraform providers that we will use in the project.
+
+
+#### Terraform plan
+
+`terraform plan`
+
+this will generate out a changeset, about state of our infrastructure and what will be changed.
+
+we can output this change ie.`terraform plan` to be pass to an apply, but often you can just ignore.
+
+### Terraform apply 
+
+`terraform apply`
+
+this will run  a plan and pass the changeset to be executed by terraform.Apply should prompt yes or no .
+
+if we want to automatically approve an apply we can provide the auto approve flat eg. `terraform apply --auto-approve`
+
+### Terraform Lock files
+
+`.terraform.lock.hcl` contains the locked versionfor the providers or modules that should be used  with this project.
+
+the terraform lock file **should be commited** to the your github repo.
+
+### terraform state files
+
+`.terraform.tfstate` containing the information about the current state of your infrastructure.
+
+we **shouldn't commited **this file to github. it is containing sensitive infromation 
+
+`.terraform.tfstate.backup` is the prev state file state
+
+
+### Terraform directory 
+
+`Terraform Directory` typically refers to a directory or folder in your project's file structure where you organize your Terraform configuration files. 
+
