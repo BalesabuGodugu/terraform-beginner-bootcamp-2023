@@ -242,3 +242,26 @@ we **shouldn't commited **this file to github. it is containing sensitive infrom
 
 `Terraform Directory` typically refers to a directory or folder in your project's file structure where you organize your Terraform configuration files. 
 
+## Terraform Cloud login && Gitpod workspace
+
+please follow the following instructions to login terraform cloud from gitpod workspace.
+
+```
+  touch /home/gitpod/.terraform.d/credentials.tfrc.json
+  open /home/gitpod/.terraform.d/credentials.tfrc.json
+
+```
+
+please update the file with following instructions
+
+```json
+
+{
+  "credentials": {
+    "app.terraform.io": {
+      "token": "YOUR TERRAFORM CLOUD TOKEN"
+    }
+  }
+}
+
+```
