@@ -265,3 +265,5 @@ please update the file with following instructions
 }
 
 ```
+
+## automate the process using bash script for [bin/generate_tfrc_credentials.sh]
