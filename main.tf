@@ -1,5 +1,13 @@
 
 terraform {
+
+   cloud {
+    organization = "practice_aws_azure"
+
+    workspaces {
+      name = "terra-house-1"
+    }
+  }
   required_providers {
     random = {
       source = "hashicorp/random"
