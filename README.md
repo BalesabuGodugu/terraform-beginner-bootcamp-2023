@@ -2,7 +2,7 @@
 
 ## Weekly Journals
 
-- week0 journal(journal/week0.md)
+- [week0 journal](journal/week0)
 
 
 -[Github markdown TOC Generator](https://derlin.github.io/bitdowntoc/)
