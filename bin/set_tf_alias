@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#!/usr/bin/env bash
-
 # Check if the alias already exists in the .bash_profile
 grep -q 'alias tf="terraform"' ~/.bash_profile
 
